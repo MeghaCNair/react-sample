@@ -25,7 +25,7 @@ const TodoList = () => {
     ]);
   };
   const markascomplete = (id) => {
-    let changedState = todoState;
+    let changedState = [...todoState];
     for (var item of changedState) {
       if (item.id == id) {
         item.state = 'Completed';
